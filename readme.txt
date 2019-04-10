@@ -29,17 +29,17 @@ Step 2:  Running the lexical scanner and capturing output.
 --------> results in the temporary file tmp1234.txt.  But you could also just remove the newlines in a text editor application, then paste
 --------> the resulting gene sequence into the terminal from which the lexical scanner is called, upon execution (usually with ctrl+D) a call
 --------> to the R function 'collection' - (c(.)) is listed with probabilities in order of their appearance from left to right, top to bottom
---------> of the probabilities in the probability transition matrix with rows and columns arranged in lexicographic ordering.  IE. 
+--------> of the probabilities in the probability transition matrix with rows and columns arranged an ordering.  IE. 
 -------->
 -------->
---------> 		 A     C     T     G
--------->	     A P(AA) P(AC) P(AT) P(AG)
+--------> 		 A     C     G     T
+-------->	     A P(AA) P(AC) P(AG) P(AT)
 -------->	     
--------->	     C P(CA) P(CC) P(CT) P(CG) 		
--------->						======= OUTPUT ======>>>>>>>>>>>         c(P^(AA),P^(AC),P^(AT),P^(AG), ...., P^(GA), P^(GC), P^(GT), P^(GG))  *^ because these are estimates
--------->	     T P(TA) P(TC) P(TT) P(TG)
+-------->	     C P(CA) P(CC) P(CG) P(CT) 		
+-------->						= OUTPUT =>   c(P^(AA),P^(AC), ...., P^(GT), P^(GG))  *^ because these are estimates
+-------->	     G P(TA) P(TC) P(TG) P(TT)
 --------> 
--------->	     G P(GA) P(GC) P(GT) P(GG) 
+-------->	     T P(GA) P(GC) P(GG) P(GT) 
 --------> 
 -------->
 --------> Once these collections are listed for each of the sequences of interest, the final part of the analysis pipeline can take place. 
