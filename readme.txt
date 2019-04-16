@@ -1,6 +1,8 @@
 Biosequence Transition Probability Similarity Scoring Software
 By Micah
 
+For a tutorial on usage, and guide to the reasoning in this project please see: https://people.smu.edu/34915677/2019/03/03/simultaneous-multinomial-confidence-intervals-for-genomic-comparison/
+
 
 If you would like to estimate the sequence similarity and produce hierarchical dendrograms of orgnisms based on 
 the number of overlapping confidence intervals then you should run the following code, please find some detailed 
