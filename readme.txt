@@ -6,8 +6,10 @@ If you would like to estimate the sequence similarity and produce hierarchical d
 the number of overlapping confidence intervals then you should run the following code, please find some detailed 
 descriptions of what is being done below: 
 
-Step 0 (coming soon): Setting parameters for the lexical scanner (ie how many probabilites to compute etc...). 
-
+Step 0: Setting parameters for the lexical scanner (ie how many probabilites to compute/filename). 
+---> There is a short Python script now included in the Code directory which is called genFlex.py. 
+---> This python code is meant to be called with the python compiler and two arguments, indicating the k-mer size of interest
+---> Please use the " python genFlex.py <output file name> <k - number of base pairs in subsequence> " to generate flex
 
 Step 1: Compiling the Lexical Scanner with flex/lex
 
